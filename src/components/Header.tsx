@@ -27,7 +27,7 @@ export default function Header() {
             andreani.clement@gmail.com
           </p>
 
-          <div className="flex flex-col sm:flex-row sm:justify-start gap-4 sm:gap-6 font-display">
+          <div className="flex flex-col sm:flex-row sm:justify-start gap-4 sm:gap-6">
             <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold">
               {hiText}
               <span> {nameText}</span>
