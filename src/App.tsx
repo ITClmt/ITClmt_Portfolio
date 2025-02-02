@@ -1,7 +1,11 @@
+import "./App.css";
+import { motion } from "framer-motion";
+import Header from "./components/Header";
+
 function App() {
   return (
     <>
-      <h1>React + Biome = Template</h1>
+      <Header />
     </>
   );
 }
