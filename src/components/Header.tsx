@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import { useTypewriter } from "../hooks/useTypewriter";
 
 export default function Header() {
-  const hiText = useTypewriter("Hi, I'm", 100, 0);
-  const nameText = useTypewriter("Clément!", 100, 800);
-  const roleText1 = useTypewriter("I'm a", 100, 1600);
+  const hiText = useTypewriter("Hi, I'm", 80, 0);
+  const nameText = useTypewriter("Clément!", 80, 800);
+  const roleText1 = useTypewriter("I'm a", 80, 1600);
   const roleText2 = useTypewriter("Full Stack Developer", 50, 2000);
   const contactText = useTypewriter(
     "Feel free to explore my portfolio and reach out !",
-    50,
+    35,
     2900,
   );
 
@@ -62,7 +62,7 @@ export default function Header() {
           <motion.div
             initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 5 }}
+            transition={{ duration: 0.5, delay: 4 }}
             className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center animate-bounce flex flex-col items-center"
           >
             Scroll

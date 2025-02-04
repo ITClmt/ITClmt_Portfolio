@@ -15,6 +15,7 @@ import {
   SiJavascript,
   SiExpress,
   SiLeaflet,
+  SiVite,
 } from "react-icons/si";
 
 const TechList = () => {
@@ -32,6 +33,7 @@ const TechList = () => {
     { icon: SiLeaflet, name: "Leaflet" },
     { icon: FaGithub, name: "GitHub" },
     { icon: FaGit, name: "Git" },
+    { icon: SiVite, name: "Vite" },
   ];
 
   return (
