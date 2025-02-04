@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
-const cvImage = "/public//CV_Clément_Andreani_DevW-alt.webp";
-const cvPdf = "/public/CV_Clément_Andreani_DevW-alt.pdf";
+const cvImage = "public/CV_Clément_Andreani_DevW-alt.webp";
+const cvPdf = "public/CV_Clément_Andreani_DevW-alt.pdf";
 
 export default function CvPage() {
   return (
