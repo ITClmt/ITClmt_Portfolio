@@ -17,7 +17,7 @@ const projects: Project[] = [
     description:
       "Project 2 made for my training at Wide Code School. It's a website that allows you to track the weather wherever you want.",
     technologies: ["React", "TypeScript", "API"],
-    imageUrl: "src/assets/Windora2.webp",
+    imageUrl: "/Windora2.webp",
     githubUrl: "https://github.com/ITClmt/Windora_WCS",
     demoUrl: "https://windora.vercel.app/",
   },
@@ -27,7 +27,7 @@ const projects: Project[] = [
     description:
       "A personal side project leveraging the CoinGecko API to track and display real-time cryptocurrency prices and market data.",
     technologies: ["React", "TypeScript", "Tailwind", "API"],
-    imageUrl: "src/assets/ITCrypto3.webp",
+    imageUrl: "/ITCrypto3.webp",
     githubUrl: "https://github.com/ITClmt/ITCrypto",
     demoUrl: "https://itcrypto.vercel.app/",
   },
