@@ -10,7 +10,6 @@ import {
 import {
   SiTailwindcss,
   SiTypescript,
-  SiFramer,
   SiMysql,
   SiJavascript,
   SiExpress,
@@ -29,7 +28,6 @@ const TechList = () => {
     { icon: FaNode, name: "Node.js" },
     { icon: SiExpress, name: "Express" },
     { icon: SiMysql, name: "MySQL" },
-    { icon: SiFramer, name: "Framer" },
     { icon: SiLeaflet, name: "Leaflet" },
     { icon: FaGithub, name: "GitHub" },
     { icon: FaGit, name: "Git" },
