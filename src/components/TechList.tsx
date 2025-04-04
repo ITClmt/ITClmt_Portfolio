@@ -15,6 +15,9 @@ import {
   SiExpress,
   SiLeaflet,
   SiVite,
+  SiMongodb,
+  SiJest,
+  SiMongoose,
 } from "react-icons/si";
 
 const TechList = () => {
@@ -32,6 +35,9 @@ const TechList = () => {
     { icon: FaGithub, name: "GitHub" },
     { icon: FaGit, name: "Git" },
     { icon: SiVite, name: "Vite" },
+    { icon: SiMongodb, name: "MongoDB" },
+    { icon: SiMongoose, name: "Mongoose" },
+    { icon: SiJest, name: "Jest" },
   ];
 
   return (

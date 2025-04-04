@@ -13,6 +13,16 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    title: "Appointment Manager",
+    description:
+      "A personal side project that allows you to manage your appointments. Checkpoint 4 of my training at Wide Code School.",
+    technologies: ["React", "TypeScript", "Tailwind", "Express", "MongoDB"],
+    imageUrl: "/ApointmentManeger01.png",
+    githubUrl: "https://github.com/ITClmt/CP4_ClementA-WCS",
+    demoUrl: "https://appointment-manager-front.vercel.app",
+  },
+  {
+    id: 2,
     title: "Windora",
     description:
       "Project 2 made for my training at Wide Code School. It's a website that allows you to track the weather wherever you want.",
