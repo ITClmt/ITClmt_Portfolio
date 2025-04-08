@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 interface Project {
   id: number;
@@ -67,13 +68,15 @@ const ProjectSection = () => {
             >
               {/* Image Section */}
               <div className="relative overflow-hidden rounded-xl aspect-video">
-                <motion.img
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                  src={project.imageUrl}
-                  alt={project.title}
-                  className="w-full h-full object-cover object-top filter brightness-80"
-                />
+                <Link to={project.demoUrl || ""}>
+                  <motion.img
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                    src={project.imageUrl}
+                    alt={project.title}
+                    className="w-full h-full object-cover object-top filter brightness-80"
+                  />
+                </Link>
               </div>
 
               {/* Content Section */}
