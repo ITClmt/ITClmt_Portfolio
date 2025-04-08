@@ -4,7 +4,7 @@ import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage.tsx";
 import CvPage from "./pages/CvPage.tsx";
-
+import Contact from "./pages/Contact.tsx";
 const root = document.getElementById("root");
 
 const router = createBrowserRouter([
@@ -18,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/CV",
         element: <CvPage />,
+      },
+      {
+        path: "/Contact",
+        element: <Contact />,
       },
     ],
   },

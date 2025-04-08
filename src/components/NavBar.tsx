@@ -21,7 +21,7 @@ export default function NavBar() {
         </NavLink>
         <NavLink
           to="/Contact"
-          className="hover:scale-105 transition-all duration-150  pointer-events-none opacity-50"
+          className="hover:scale-105 transition-all duration-150"
         >
           <li>Contact</li>
         </NavLink>
