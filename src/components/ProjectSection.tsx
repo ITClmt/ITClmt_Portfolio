@@ -24,6 +24,18 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "AFAC",
+    description:
+      "Project 3 made for my training at Wide Code School. It's a website that allows you to manage your appointments.",
+    technologies: ["React", "TypeScript", "Express", "MySQL"],
+    imageUrl: "/AFAC01.webp",
+    githubUrl:
+      "https://github.com/WildCodeSchool-2024-09/JS-RemoteFR-Q4-Jaune-P3-Afac",
+    demoUrl:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7315755767750414336/",
+  },
+  {
+    id: 3,
     title: "Windora",
     description:
       "Project 2 made for my training at Wide Code School. It's a website that allows you to track the weather wherever you want.",
@@ -33,7 +45,7 @@ const projects: Project[] = [
     demoUrl: "https://windora.vercel.app/",
   },
   {
-    id: 2,
+    id: 4,
     title: "ITCrypto",
     description:
       "A personal side project leveraging the CoinGecko API to track and display real-time cryptocurrency prices and market data.",
