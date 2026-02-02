@@ -18,6 +18,9 @@ import {
   SiMongodb,
   SiJest,
   SiMongoose,
+  SiDocker,
+  SiPostgresql,
+  SiPrisma,
 } from "react-icons/si";
 
 const TechList = () => {
@@ -38,6 +41,9 @@ const TechList = () => {
     { icon: SiMongodb, name: "MongoDB" },
     { icon: SiMongoose, name: "Mongoose" },
     { icon: SiJest, name: "Jest" },
+    { icon: SiDocker, name: "Docker" },
+    { icon: SiPostgresql, name: "PostgreSQL" },
+    { icon: SiPrisma, name: "Prisma" },
   ];
 
   return (
