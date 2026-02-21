@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = "Contact — Clément Andreani | Développeur Full Stack";
+  }, []);
+
   return (
-    <section className="min-h-screen p-4 bg-[#f8f9fa]">
+    <main className="min-h-screen p-4 bg-[#f8f9fa]">
       <div className="max-w-3xl mx-auto space-y-8">
         <h1 className="text-4xl font-bold text-center mb-8">Contact</h1>
 
@@ -38,6 +43,7 @@ export default function Contact() {
           </a>
         </div>
       </div>
-    </section>
+    </main>
   );
 }
+

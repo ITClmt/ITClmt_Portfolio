@@ -14,13 +14,13 @@ export default function NavBar() {
           <li>Home</li>
         </NavLink>
         <NavLink
-          to="/CV"
+          to="/cv"
           className="hover:scale-105 transition-all duration-150"
         >
           <li>CV</li>
         </NavLink>
         <NavLink
-          to="/Contact"
+          to="/contact"
           className="hover:scale-105 transition-all duration-150"
         >
           <li>Contact</li>

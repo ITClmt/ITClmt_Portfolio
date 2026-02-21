@@ -79,7 +79,7 @@ const ProjectSection = () => {
 
         <div className="grid gap-12">
           {projects.map((project, index) => (
-            <motion.div
+            <motion.article
               key={project.id}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -94,7 +94,7 @@ const ProjectSection = () => {
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                     src={project.imageUrl}
-                    alt={project.title}
+                    alt={`Capture d'écran du projet ${project.title}`}
                     className="w-full h-full object-cover object-top filter brightness-80"
                   />
                 </Link>
@@ -148,7 +148,7 @@ const ProjectSection = () => {
                   )}
                 </div>
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
       </div>

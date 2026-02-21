@@ -36,8 +36,8 @@ export default function Header() {
                 initial={{ opacity: 0, y: 0 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.5 }}
-                src="/profile-pic (5).png"
-                alt="profile-pic"
+                src="/profile-clement-andreani.png"
+                alt="Photo de Clément Andreani, Développeur Full Stack"
                 className="w-24 h-24 sm:w-28 sm:h-28 md:w-30 md:h-30 rounded-3xl border-4 border-gray-300 object-cover filter grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>

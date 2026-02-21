@@ -1,11 +1,16 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const cvImage = "/CV_Clement_Andreani-dev.webp";
 const cvPdf = "/CV_Clement_Andreani-dev.pdf";
 
 export default function CvPage() {
+  useEffect(() => {
+    document.title = "CV — Clément Andreani | Développeur Full Stack";
+  }, []);
+
   return (
-    <div className="min-h-screen p-4 bg-[#f8f9fa]">
+    <main className="min-h-screen p-4 bg-[#f8f9fa]">
       <div className="max-w-3xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -17,7 +22,7 @@ export default function CvPage() {
 
         <motion.img
           src={cvImage}
-          alt="CV Clément Andreani"
+          alt="CV de Clément Andreani, Développeur Full Stack"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -34,6 +39,7 @@ export default function CvPage() {
           Download CV
         </motion.a>
       </div>
-    </div>
+    </main>
   );
 }
+
