@@ -14,6 +14,15 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    title: "Midi-Mealy",
+    description:
+      "Search, geolocation, and restaurant rating system near offices with review sharing between colleagues. Creation of 'Company' spaces with role management (Managers / Employees) and access control (invitations via unique codes or open access).",
+    technologies: ["React", "Tanstack Start", "TypeScript", "Tailwind", "Supabase"],
+    imageUrl: "/midiMealy.png",
+    demoUrl: "https://www.midi-mealy.xyz/",
+  },
+  {
+    id: 2,
     title: "Appointment Manager",
     description:
       "A personal side project that allows you to manage your appointments. Checkpoint 4 of my training at Wide Code School.",
@@ -23,7 +32,7 @@ const projects: Project[] = [
     demoUrl: "https://appointment-manager-front.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     title: "AFAC",
     description:
       "Project 3 made for my training at Wide Code School. It's a website that allows you to manage your appointments.",
@@ -35,7 +44,7 @@ const projects: Project[] = [
       "https://www.linkedin.com/feed/update/urn:li:activity:7315755767750414336/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Windora",
     description:
       "Project 2 made for my training at Wide Code School. It's a website that allows you to track the weather wherever you want.",
@@ -45,7 +54,7 @@ const projects: Project[] = [
     demoUrl: "https://windora.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "ITCrypto",
     description:
       "A personal side project leveraging the CoinGecko API to track and display real-time cryptocurrency prices and market data.",
