@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
-const cvImage = "/CV_Clement_Andreani-dev_alt.webp";
-const cvPdf = "/CV_Clement_Andreani-dev_alt.pdf";
+const cvImage = "/CV_Clement_Andreani-dev.webp";
+const cvPdf = "/CV_Clement_Andreani-dev.pdf";
 
 export default function CvPage() {
   return (
@@ -26,7 +26,7 @@ export default function CvPage() {
 
         <motion.a
           href={cvPdf}
-          download="CV_Clément_Andreani_DevW-alt.pdf"
+          download="CV_Clément_Andreani_dev.pdf"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors"
