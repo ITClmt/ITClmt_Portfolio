@@ -17,10 +17,11 @@ import {
   SiVite,
   SiMongodb,
   SiJest,
-  SiMongoose,
   SiDocker,
   SiPostgresql,
   SiPrisma,
+  SiSupabase,
+  SiNestjs
 } from "react-icons/si";
 
 const TechList = () => {
@@ -33,17 +34,18 @@ const TechList = () => {
     { icon: SiTypescript, name: "TypeScript" },
     { icon: FaNode, name: "Node.js" },
     { icon: SiExpress, name: "Express" },
+    { icon: SiNestjs, name: "NestJS" },
+    { icon: SiDocker, name: "Docker" },
+    { icon: SiPostgresql, name: "PostgreSQL" },
+    { icon: SiPrisma, name: "Prisma" },
+    { icon: SiSupabase, name: "Supabase" },
     { icon: SiMysql, name: "MySQL" },
+    { icon: SiMongodb, name: "MongoDB" },
     { icon: SiLeaflet, name: "Leaflet" },
     { icon: FaGithub, name: "GitHub" },
     { icon: FaGit, name: "Git" },
     { icon: SiVite, name: "Vite" },
-    { icon: SiMongodb, name: "MongoDB" },
-    { icon: SiMongoose, name: "Mongoose" },
     { icon: SiJest, name: "Jest" },
-    { icon: SiDocker, name: "Docker" },
-    { icon: SiPostgresql, name: "PostgreSQL" },
-    { icon: SiPrisma, name: "Prisma" },
   ];
 
   return (
