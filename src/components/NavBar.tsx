@@ -7,7 +7,7 @@ export default function NavBar() {
       <motion.ul
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
         className="flex justify-center items-center gap-10 underline underline-offset-4 "
       >
         <NavLink to="/" className="hover:scale-105 transition-all duration-150">

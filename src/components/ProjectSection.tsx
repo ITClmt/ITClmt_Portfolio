@@ -84,7 +84,7 @@ const ProjectSection = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               className="relative grid md:grid-cols-2 gap-8 items-center bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-shadow duration-300"
             >
               {/* Image Section */}
