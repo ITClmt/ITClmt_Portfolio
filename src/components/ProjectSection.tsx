@@ -17,25 +17,31 @@ const projects: Project[] = [
     title: "Midi-Mealy",
     description:
       "Search, geolocation, and restaurant rating system near offices with review sharing between colleagues. Creation of 'Company' spaces with role management (Managers / Employees) and access control (invitations via unique codes or open access).",
-    technologies: ["React", "Tanstack Start", "TypeScript", "Tailwind", "Supabase"],
+    technologies: [
+      "React",
+      "Tanstack Start",
+      "TypeScript",
+      "Tailwind",
+      "Supabase",
+    ],
     imageUrl: "/midiMealy.png",
     demoUrl: "https://www.midi-mealy.xyz/",
   },
   {
     id: 2,
-    title: "Appointment Manager",
+    title: "ITCrypto",
     description:
-      "A personal side project that allows you to manage your appointments. Checkpoint 4 of my training at Wide Code School.",
-    technologies: ["React", "TypeScript", "Tailwind", "Express", "MongoDB"],
-    imageUrl: "/ApointmentManeger01.png",
-    githubUrl: "https://github.com/ITClmt/CP4_ClementA-WCS",
-    demoUrl: "https://appointment-manager-front.vercel.app",
+      "A personal side project leveraging the CoinGecko API to track and display real-time cryptocurrency prices and market data.",
+    technologies: ["React", "TypeScript", "Tailwind", "API"],
+    imageUrl: "/ITCrypto3.webp",
+    githubUrl: "https://github.com/ITClmt/ITCrypto",
+    demoUrl: "https://itcrypto.vercel.app/",
   },
   {
     id: 3,
     title: "AFAC",
     description:
-      "Project 3 made for my training at Wide Code School. It's a website that allows you to manage your appointments.",
+      "Final full-stack project of my training at Wild Code School: a digital art gallery platform.",
     technologies: ["React", "TypeScript", "Express", "MySQL"],
     imageUrl: "/AFAC01.webp",
     githubUrl:
@@ -45,6 +51,16 @@ const projects: Project[] = [
   },
   {
     id: 4,
+    title: "Appointment Manager",
+    description:
+      "A personal side project that allows you to manage your appointments. Checkpoint 4 of my training at Wide Code School.",
+    technologies: ["React", "TypeScript", "Tailwind", "Express", "MongoDB"],
+    imageUrl: "/ApointmentManeger01.png",
+    githubUrl: "https://github.com/ITClmt/CP4_ClementA-WCS",
+    demoUrl: "https://appointment-manager-front.vercel.app",
+  },
+  {
+    id: 5,
     title: "Windora",
     description:
       "Project 2 made for my training at Wide Code School. It's a website that allows you to track the weather wherever you want.",
@@ -52,16 +68,6 @@ const projects: Project[] = [
     imageUrl: "/Windora2.webp",
     githubUrl: "https://github.com/ITClmt/Windora_WCS",
     demoUrl: "https://windora.vercel.app/",
-  },
-  {
-    id: 5,
-    title: "ITCrypto",
-    description:
-      "A personal side project leveraging the CoinGecko API to track and display real-time cryptocurrency prices and market data.",
-    technologies: ["React", "TypeScript", "Tailwind", "API"],
-    imageUrl: "/ITCrypto3.webp",
-    githubUrl: "https://github.com/ITClmt/ITCrypto",
-    demoUrl: "https://itcrypto.vercel.app/",
   },
 ];
 
