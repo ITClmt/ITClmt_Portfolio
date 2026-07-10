@@ -20,8 +20,22 @@ jobs:
       - name: Install poppler-utils and imagemagick
         run: sudo apt-get update && sudo apt-get install -y poppler-utils imagemagick
 
-      - name: Convert CV PDFs to WebP
-        run: bash scripts/pdf-to-webp.sh
+      - name: Convert changed CV PDFs to WebP
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            files=$(git diff --name-only HEAD~1 HEAD -- 'public/CV*.pdf' || true)
+          else
+            files=$(git diff --name-only "$BEFORE" "${{ github.sha }}" -- 'public/CV*.pdf')
+          fi
+
+          if [ -n "$files" ]; then
+            echo "Changed CV PDFs:"
+            echo "$files"
+            bash scripts/pdf-to-webp.sh $files
+          else
+            echo "No CV PDF changes detected, skipping."
+          fi
 
       - name: Commit and push generated WebP
         run: |

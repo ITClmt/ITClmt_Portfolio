@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const cvImage = "/CV_Clement_Andreani.webp";
-const cvImageInter = "/CV_DEV_EN_Clement_Andreani_inter.jpg";
+const cvImageInter = "/CV_DEV_EN_Clement_Andreani_inter.webp";
 const cvPdf = "/CV_Clement_Andreani.pdf";
 const cvPdfInter = "/CV_DEV_EN_Clement_Andreani_inter.pdf";
 

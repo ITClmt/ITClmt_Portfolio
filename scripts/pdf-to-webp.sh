@@ -5,11 +5,15 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
-shopt -s nullglob
-pdfs=(public/CV*.pdf)
+if [ "$#" -gt 0 ]; then
+  pdfs=("$@")
+else
+  shopt -s nullglob
+  pdfs=(public/CV*.pdf)
+fi
 
 if [ ${#pdfs[@]} -eq 0 ]; then
-  echo "No CV PDFs found in public/, nothing to do."
+  echo "No CV PDFs to convert."
   exit 0
 fi
 
