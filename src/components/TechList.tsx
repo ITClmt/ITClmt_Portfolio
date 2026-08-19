@@ -6,6 +6,7 @@ import {
   FaCss3,
   FaGithub,
   FaGit,
+  FaVuejs,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -21,7 +22,8 @@ import {
   SiPostgresql,
   SiPrisma,
   SiSupabase,
-  SiNestjs
+  SiNestjs,
+  SiHono,
 } from "react-icons/si";
 
 const TechList = () => {
@@ -30,10 +32,12 @@ const TechList = () => {
     { icon: FaHtml5, name: "HTML" },
     { icon: FaCss3, name: "CSS" },
     { icon: FaReact, name: "React" },
+    { icon: FaVuejs, name: "Vue" },
     { icon: SiTailwindcss, name: "Tailwind" },
     { icon: SiTypescript, name: "TypeScript" },
     { icon: FaNode, name: "Node.js" },
     { icon: SiExpress, name: "Express" },
+    { icon: SiHono, name: "Hono" },
     { icon: SiNestjs, name: "NestJS" },
     { icon: SiDocker, name: "Docker" },
     { icon: SiPostgresql, name: "PostgreSQL" },

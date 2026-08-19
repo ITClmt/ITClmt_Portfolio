@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 interface Project {
@@ -9,6 +10,7 @@ interface Project {
   imageUrl: string;
   githubUrl?: string;
   demoUrl?: string;
+  featured: boolean;
 }
 
 const projects: Project[] = [
@@ -21,6 +23,7 @@ const projects: Project[] = [
     imageUrl: "/quizzApp01.png",
     githubUrl: "https://github.com/ITClmt/QuizzApp-Native",
     demoUrl: "https://itclmt-quizzapp.expo.app/",
+    featured: true,
   },
   {
     id: 2,
@@ -37,6 +40,7 @@ const projects: Project[] = [
     imageUrl: "/midiMealy.png",
     githubUrl: "https://github.com/ITClmt/Midi-Mealy",
     demoUrl: "https://www.midi-mealy.xyz/",
+    featured: true,
   },
   {
     id: 3,
@@ -47,6 +51,7 @@ const projects: Project[] = [
     imageUrl: "/ITCrypto3.webp",
     githubUrl: "https://github.com/ITClmt/ITCrypto",
     demoUrl: "https://itcrypto.vercel.app/",
+    featured: true,
   },
   {
     id: 4,
@@ -59,6 +64,7 @@ const projects: Project[] = [
       "https://github.com/WildCodeSchool-2024-09/JS-RemoteFR-Q4-Jaune-P3-Afac",
     demoUrl:
       "https://www.linkedin.com/feed/update/urn:li:activity:7315755767750414336/",
+    featured: false,
   },
   {
     id: 5,
@@ -69,6 +75,7 @@ const projects: Project[] = [
     imageUrl: "/ApointmentManeger01.png",
     githubUrl: "https://github.com/ITClmt/CP4_ClementA-WCS",
     demoUrl: "https://appointment-manager-front.vercel.app",
+    featured: false,
   },
   {
     id: 6,
@@ -79,10 +86,18 @@ const projects: Project[] = [
     imageUrl: "/Windora2.webp",
     githubUrl: "https://github.com/ITClmt/Windora_WCS",
     demoUrl: "https://windora.vercel.app/",
+    featured: false,
   },
 ];
 
+type Tab = "featured" | "others";
+
 const ProjectSection = () => {
+  const [activeTab, setActiveTab] = useState<Tab>("featured");
+  const visibleProjects = projects.filter((project) =>
+    activeTab === "featured" ? project.featured : !project.featured,
+  );
+
   return (
     <section className="py-10 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,11 +106,42 @@ const ProjectSection = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-4xl font-bold text-center mb-8"
         >
-          Featured Projects
+          Projects
         </motion.h2>
 
-        <div className="grid gap-12">
-          {projects.map((project, index) => (
+        <div className="flex justify-center gap-8 mb-10">
+          <button
+            type="button"
+            onClick={() => setActiveTab("featured")}
+            className={`pb-1 text-lg font-medium border-b-2 transition-colors ${
+              activeTab === "featured"
+                ? "border-gray-900 text-gray-900"
+                : "border-transparent text-gray-400 hover:text-gray-600"
+            }`}
+          >
+            Featured
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveTab("others")}
+            className={`pb-1 text-lg font-medium border-b-2 transition-colors ${
+              activeTab === "others"
+                ? "border-gray-900 text-gray-900"
+                : "border-transparent text-gray-400 hover:text-gray-600"
+            }`}
+          >
+            Other Projects
+          </button>
+        </div>
+
+        <motion.div
+          key={activeTab}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className="grid gap-12"
+        >
+          {visibleProjects.map((project, index) => (
             <motion.article
               key={project.id}
               initial={{ opacity: 0, y: 50 }}
@@ -167,7 +213,7 @@ const ProjectSection = () => {
               </div>
             </motion.article>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
