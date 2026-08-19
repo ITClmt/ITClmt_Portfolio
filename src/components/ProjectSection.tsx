@@ -14,6 +14,16 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    title: "QuizzApp",
+    description:
+      "A mobile quiz app (React Native / Expo) with timed questions, XP, levels, avatars, and leaderboards. Built to be published on the app stores, but you can already try it on the web via the Expo build. The backend API is self-hosted and deployed with Dokploy.",
+    technologies: ["React Native", "Expo", "NestJS", "Prisma"],
+    imageUrl: "/quizzApp01.png",
+    githubUrl: "https://github.com/ITClmt/QuizzApp-Native",
+    demoUrl: "https://itclmt-quizzapp.expo.app/",
+  },
+  {
+    id: 2,
     title: "Midi-Mealy",
     description:
       "Search, geolocation, and restaurant rating system near offices with review sharing between colleagues. Creation of 'Company' spaces with role management (Managers / Employees) and access control (invitations via unique codes or open access).",
@@ -28,7 +38,7 @@ const projects: Project[] = [
     demoUrl: "https://www.midi-mealy.xyz/",
   },
   {
-    id: 2,
+    id: 3,
     title: "ITCrypto",
     description:
       "A personal side project leveraging the CoinGecko API to track and display real-time cryptocurrency prices and market data.",
@@ -38,7 +48,7 @@ const projects: Project[] = [
     demoUrl: "https://itcrypto.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "AFAC",
     description:
       "Final full-stack project of my training at Wild Code School: a digital art gallery platform.",
@@ -50,7 +60,7 @@ const projects: Project[] = [
       "https://www.linkedin.com/feed/update/urn:li:activity:7315755767750414336/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Appointment Manager",
     description:
       "A personal side project that allows you to manage your appointments. Checkpoint 4 of my training at Wide Code School.",
@@ -60,7 +70,7 @@ const projects: Project[] = [
     demoUrl: "https://appointment-manager-front.vercel.app",
   },
   {
-    id: 5,
+    id: 6,
     title: "Windora",
     description:
       "Project 2 made for my training at Wide Code School. It's a website that allows you to track the weather wherever you want.",
