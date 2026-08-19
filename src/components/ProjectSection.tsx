@@ -35,6 +35,7 @@ const projects: Project[] = [
       "Supabase",
     ],
     imageUrl: "/midiMealy.png",
+    githubUrl: "https://github.com/ITClmt/Midi-Mealy",
     demoUrl: "https://www.midi-mealy.xyz/",
   },
   {
