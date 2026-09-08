@@ -39,7 +39,7 @@ const projects: Project[] = [
     ],
     imageUrl: "/midiMealy.png",
     githubUrl: "https://github.com/ITClmt/Midi-Mealy",
-    demoUrl: "https://www.midi-mealy.xyz/",
+    demoUrl: "https://midi-mealy.itclmt.dev/",
     featured: true,
   },
   {
